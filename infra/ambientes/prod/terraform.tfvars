@@ -1,1 +1,1 @@
-bucket_name = ""
+bucket_name = "projeto-mlops-us-east-1-prod"
