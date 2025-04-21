@@ -1,7 +1,3 @@
-provider "aws" {
-    region = "us-east-1"
-}
-
 terraform {
     required_providers {
         aws = {
@@ -16,3 +12,12 @@ terraform {
 }
     
 
+
+resource "aws_s3_bucket" "mlops_bucket" {
+    bucket = var.bucket_name
+
+    tags = {
+        Name        = "mlops project"
+        Environment = "prod"
+    }
+}
