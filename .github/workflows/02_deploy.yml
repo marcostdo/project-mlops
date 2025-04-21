@@ -12,7 +12,7 @@ permissions:
   
 jobs: 
   terraform:
-    uses: ./.github/workflows/terraform.yml
+    uses: ./.github/workflows/01_terraform.yml
     with:
       environment: prod
       aws-assume-role-arn: "arn:aws:iam::074735440379:role/github-action-marcostdo-projeto-mlops"
