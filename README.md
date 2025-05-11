@@ -3,6 +3,10 @@
 ## Visão Geral
 Este projeto implementa uma arquitetura de MLOps para gerenciar o ciclo de vida de modelos de aprendizado de máquina, desde o desenvolvimento até a produção.
 
+## Explicação do Projeto
+
+[![Video](https://img.youtube.com/vi/Z9FtrRq0rc0/0.jpg)](https://www.youtube.com/watch?v=Z9FtrRq0rc0)
+
 ## Estrutura do Projeto
 Abaixo está a estrutura geral do projeto:
 
