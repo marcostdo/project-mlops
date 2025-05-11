@@ -20,7 +20,7 @@ resource "aws_s3_bucket" "mlops_bucket" {
     }
 }
 
-
+/*
 # ec2 resources
 data "aws_ami" "ubuntu" {
   most_recent = true
@@ -57,3 +57,5 @@ resource "aws_instance" "processing_data" {
     Name = "data_processing"
   }
 }
+*/
+
