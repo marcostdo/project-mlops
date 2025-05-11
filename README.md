@@ -3,7 +3,7 @@
 ## Visão Geral
 Este projeto implementa uma arquitetura de MLOps para gerenciar o ciclo de vida de modelos de aprendizado de máquina, desde o desenvolvimento até a produção.
 
-## Explicação do Projeto
+## Apresentação (Video)
 
 [![Video](https://img.youtube.com/vi/Z9FtrRq0rc0/0.jpg)](https://www.youtube.com/watch?v=Z9FtrRq0rc0)
 
@@ -82,3 +82,4 @@ Contribuições são bem-vindas! Por favor, abra uma issue ou envie um pull requ
 
 ## Licença
 Este projeto está licenciado sob a [MIT License](LICENSE).
+
