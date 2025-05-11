@@ -27,7 +27,7 @@ project-mlops/
 ## Diagrama da Arquitetura
 Abaixo está um diagrama representando a arquitetura geral do projeto:
 
-![Diagrama da Arquitetura](img/diagrama-arquitetura.png)
+![Diagrama da Arquitetura](img/diagram.png)
 
 ## Componentes da Arquitetura
 
