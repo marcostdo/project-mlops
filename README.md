@@ -5,7 +5,9 @@ Este projeto implementa uma arquitetura de MLOps para gerenciar o ciclo de vida 
 
 ## Apresentação
 
+<div align='center'>
 [![Video](https://img.youtube.com/vi/aDDhuXXv2uk/0.jpg)](https://www.youtube.com/watch?v=aDDhuXXv2uk)
+<div>
 
 ## Diagrama da Arquitetura
 Abaixo está um diagrama representando a arquitetura geral do projeto:
