@@ -3,83 +3,16 @@
 ## Visão Geral
 Este projeto implementa uma arquitetura de MLOps para gerenciar o ciclo de vida de modelos de aprendizado de máquina, desde o desenvolvimento até a produção.
 
-## Apresentação (Video)
-
+## Apresentação
 [![Video](https://img.youtube.com/vi/aDDhuXXv2uk/0.jpg)](https://www.youtube.com/watch?v=aDDhuXXv2uk)
 
-## Estrutura do Projeto
-Abaixo está a estrutura geral do projeto:
-
-```
-project-mlops/
-├── data/                # Dados brutos e processados
-├── notebooks/           # Notebooks para exploração e prototipagem
-├── src/                 # Código-fonte do projeto
-│   ├── data/            # Scripts para manipulação de dados
-│   ├── models/          # Treinamento e avaliação de modelos
-│   ├── pipelines/       # Definição de pipelines de MLOps
-│   └── utils/           # Funções auxiliares
-├── tests/               # Testes automatizados
-├── configs/             # Configurações e hiperparâmetros
-├── artifacts/           # Modelos treinados e outros artefatos
-├── docker/              # Configurações para containerização
-├── ci-cd/               # Scripts e configurações de CI/CD
-├── img/                 # Imagens e diagramas
-└── README.md            # Documentação do projeto
-```
 
 ## Diagrama da Arquitetura
 Abaixo está um diagrama representando a arquitetura geral do projeto:
 
 ![Diagrama da Arquitetura](img/diagram.png)
 
-## Componentes da Arquitetura
+## Considerações
+A ideia inicial era automatizar a esteira para realizar a criação dos recursos utilizados dentro da conta aws e assim tornar possível a reprodução da mesma estrutura na conta de quem fizesse o fork do projeto, sendo necessário apenas criar sua conta implementar algumas configurações requeridas, mas considerando o tempo e a complexidade de implementação de alguns serviços, mudei a abordagem e segui apenas com o case principal mas mantive a esteira criada em **.github**.
 
-### 1. **Ingestão de Dados**
-- Local: `src/data/`
-- Scripts para coleta, limpeza e transformação de dados.
-
-### 2. **Treinamento de Modelos**
-- Local: `src/models/`
-- Código para treinar, validar e salvar modelos.
-
-### 3. **Pipelines**
-- Local: `src/pipelines/`
-- Definição de pipelines para automação do fluxo de trabalho.
-
-### 4. **Testes**
-- Local: `tests/`
-- Testes unitários e de integração para garantir a qualidade do código.
-
-### 5. **Implantação**
-- Local: `docker/` e `ci-cd/`
-- Configurações para containerização e automação de implantação.
-
-## Tecnologias Utilizadas
-- **Linguagem:** Python
-- **Orquestração:** Prefect, Airflow
-- **Containerização:** Docker
-- **CI/CD:** GitHub Actions
-- **Monitoramento:** Prometheus, Grafana
-
-## Como Executar
-1. Clone o repositório:
-    ```bash
-    git clone https://github.com/seu-usuario/project-mlops.git
-    ```
-2. Configure o ambiente:
-    ```bash
-    cd project-mlops
-    pip install -r requirements.txt
-    ```
-3. Execute os pipelines:
-    ```bash
-    python src/pipelines/main.py
-    ```
-
-## Contribuição
-Contribuições são bem-vindas! Por favor, abra uma issue ou envie um pull request.
-
-## Licença
-Este projeto está licenciado sob a [MIT License](LICENSE).
-
+- Apenas para garantir a integridade da conta, as roles e credenciais listadas no projeto foram excluídas da conta.
