@@ -14,7 +14,7 @@ jobs:
     uses: ./.github/workflows/01_terraform.yml
     with:
       environment: prod
-      aws-assume-role-arn: "" ## role arn
+      aws-assume-role-arn: "arn:aws:iam::074735440379:role/github-action-marcostdo-projeto-mlops"
       aws-region: "us-east-1"
       aws-statefile-s3-bucket: "projeto-mlops-us-east-1-terraform-statefile"
       aws-lock-dynamo-table: "projeto-mlops-us-east-1-terraform-lock"
